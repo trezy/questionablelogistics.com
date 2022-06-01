@@ -19,6 +19,7 @@ module.exports = {
 		'plugin:react-perf/recommended',
 		'plugin:react-prefer-function-component/recommended',
 		'plugin:security/recommended',
+		'plugin:@next/next/recommended',
 	],
 	overrides: [
 		{

@@ -1,0 +1,35 @@
+{
+  "name": "questionablelogistics.com",
+  "version": "1.0.0",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Trezy",
+    "email": "t@trezy.com"
+  },
+  "private": true,
+  "scripts": {
+    "lint": "eslint ./src/**/*.{js,jsx}",
+    "start": "next"
+  },
+  "dependencies": {
+    "next": "^12.1.6",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-plugin-editorconfig": "^3.2.0",
+    "eslint-plugin-jsdoc": "^39.2.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-optimize-regex": "^1.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-react-perf": "^3.3.1",
+    "eslint-plugin-react-prefer-function-component": "^1.0.0",
+    "eslint-plugin-security": "^1.5.0",
+    "eslint-plugin-sort-class-members": "^1.14.1",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  },
+  "packageManager": "yarn@3.2.1"
+}

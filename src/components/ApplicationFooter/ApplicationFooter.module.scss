@@ -1,0 +1,9 @@
+.footer {
+	align-items: center;
+	background-color: hsla(var(--palette-dark-grey-hsl), 0.5);
+	display: flex;
+	grid-area: footer;
+	justify-content: space-between;
+	margin-top: auto;
+	padding: var(--gutter);
+}

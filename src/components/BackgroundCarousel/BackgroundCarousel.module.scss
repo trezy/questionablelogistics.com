@@ -1,0 +1,39 @@
+.carousel-wrapper {
+	bottom: 0;
+	height: 100vh;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100vw;
+	z-index: -1;
+
+	&:after {
+		background-color: hsla(var(--palette-black-hsl), 0.7);
+		content: '';
+		bottom: 0;
+		display: block;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 3;
+	}
+}
+
+.image-wrapper {
+	bottom: 0;
+	height: 100vh;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100vw;
+
+	&:first-child {
+		z-index: 2;
+	}
+	&:last-child {
+		z-index: 1;
+	}
+}

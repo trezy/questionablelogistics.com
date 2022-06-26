@@ -1,0 +1,23 @@
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	grid-area: main;
+	min-height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	main {
+		padding: calc(var(--gutter) * 2);
+
+		h2 {
+			border-bottom-color: var(--palette-white);
+			border-bottom-style: solid;
+			border-bottom-width: 0.2rem;
+			font-family: 'The Rift', 'Roboto Mono', monospace;
+			font-size: 5rem;
+			letter-spacing: 0.5rem;
+			margin-bottom: var(--gutter);
+		}
+	}
+}

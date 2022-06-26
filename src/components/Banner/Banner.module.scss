@@ -1,0 +1,65 @@
+.banner {
+	background-color: hsla(var(--palette-dark-grey-hsl), 0.5);
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	grid-area: banner;
+	margin-left: var(--gutter);
+	max-height: 100vh;
+	position: sticky;
+	top: 0;
+
+	nav {
+		display: flex;
+		flex-direction: column;
+
+		a {
+			color: var(--palette-white);
+			font-family: 'The Rift', 'Roboto Mono', monospace;
+			font-size: 2rem;
+			padding: var(--gutter);
+			position: relative;
+			text-decoration: none;
+			text-indent: 0;
+			transition-duration: 0.2s;
+			transition-property: text-indent;
+
+			&:after,
+			&:before {
+				bottom: 0;
+				content: '';
+				display: block;
+				left: 0;
+				pointer-events: none;
+				position: absolute;
+				top: 0;
+				transition-duration: 0.2s;
+			}
+
+			&:after {
+				background-color: hsla(var(--palette-white-hsl), 0.2);
+				right: 100%;
+				transition-property: right;
+				z-index: -1;
+			}
+
+			&:before {
+				background-color: var(--palette-light-blue);
+				width: 0;
+				transition-property: width;
+			}
+
+			&:hover {
+				text-indent: 1rem;
+
+				&:after {
+					right: 0;
+				}
+			}
+
+			&.is-active:before {
+				width: 0.2rem;
+			}
+		}
+	}
+}

@@ -48,12 +48,6 @@ export function Banner() {
 				[styles['is-active']]: Router.asPath === link.path,
 			})
 
-			console.log({
-				compiledClassName,
-				'Router.asPath': Router.asPath,
-				'link.path': link.path,
-			})
-
 			return (
 				<Link
 					key={index}

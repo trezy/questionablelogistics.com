@@ -19,13 +19,13 @@ import { compileArrays } from '../helpers/compileArrays.js'
 
 // Constants
 const GOOGLE_FONTS_CONFIG = {
-	'Roboto': {
+	'Source Sans 3': {
 		ital: [0, 1],
-		wght: [400, 700],
+		wght: [200, 300, 400, 500, 600, 700, 800, 900],
 	},
-	'Roboto Mono': {
+	'Source Code Pro': {
 		ital: [0, 1],
-		wght: [100, 400, 700],
+		wght: [200, 300, 400, 500, 600, 700, 800, 900],
 	},
 }
 const GOOGLE_FONTS_STRING = Object

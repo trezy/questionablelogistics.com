@@ -71,7 +71,10 @@
 					transition-property: width;
 				}
 
+				&:focus,
 				&:hover {
+					text-decoration-color: transparent;
+
 					&:after {
 						right: 0;
 					}

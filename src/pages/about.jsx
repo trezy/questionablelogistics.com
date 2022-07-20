@@ -1,10 +1,9 @@
 /**
- * The home page.
+ * The about page.
  */
 export default function AboutPage() {
 	return (
 		<>
-			<h2>{'About'}</h2>
 			<p>{'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eros sit amet elit auctor auctor. Sed pulvinar lacus ut consequat placerat. Nullam id nunc nulla. Ut posuere finibus ipsum, quis interdum mauris molestie eu. Ut nulla mi, porttitor non velit ac, placerat consequat nunc. Curabitur ante arcu, feugiat id hendrerit eget, luctus et sem. Cras suscipit ullamcorper lectus, non blandit leo luctus quis. Morbi malesuada nisi vel nibh vehicula euismod. Vivamus vel efficitur arcu. Donec tincidunt dui odio, sed malesuada mauris suscipit vitae. Proin ac nulla mauris. Aenean porttitor, tellus a rutrum dictum, erat ante mollis arcu, vitae blandit tellus ex vitae ex. Ut eros ligula, pellentesque nec massa quis, mattis mollis ligula.'}</p>
 			<p>{'Integer sit amet eleifend turpis. Quisque semper et quam sed rutrum. Integer sit amet velit vel odio pretium dignissim. Aenean facilisis ac ante sit amet imperdiet. Maecenas et tortor ex. In eget consectetur est, a scelerisque tellus. Maecenas ac lorem sed orci congue laoreet sit amet id libero. Nulla facilisi. Praesent non sapien sed quam semper scelerisque ut vestibulum magna. Donec sagittis lorem dui, ac placerat turpis tincidunt quis. Maecenas ac volutpat lorem. Sed mauris elit, condimentum vitae libero ut, finibus malesuada tellus. In hac habitasse platea dictumst.'}</p>
 			<p>{'Phasellus vel metus nisi. Nullam vel orci facilisis, convallis nulla eget, dapibus sem. Nam eget dapibus nisl, nec tincidunt risus. Etiam condimentum sollicitudin finibus. Proin in egestas augue. Fusce non viverra tellus. Vestibulum eu malesuada lacus. Aenean et ante non lectus blandit molestie in non tellus. Praesent urna elit, fringilla eu lectus vitae, pulvinar venenatis dui.'}</p>
@@ -48,3 +47,5 @@ export default function AboutPage() {
 		</>
 	)
 }
+
+AboutPage.title = 'About'

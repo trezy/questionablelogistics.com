@@ -19,13 +19,8 @@ import { compileArrays } from '../helpers/compileArrays.js'
 
 // Constants
 const GOOGLE_FONTS_CONFIG = {
-	'Source Sans 3': {
-		ital: [0, 1],
-		wght: [200, 300, 400, 500, 600, 700, 800, 900],
-	},
-	'Source Code Pro': {
-		ital: [0, 1],
-		wght: [200, 300, 400, 500, 600, 700, 800, 900],
+	'Maven Pro': {
+		wght: [400, 500, 600, 700, 800, 900],
 	},
 }
 const GOOGLE_FONTS_STRING = Object

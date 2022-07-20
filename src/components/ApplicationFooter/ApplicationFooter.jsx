@@ -22,6 +22,14 @@ import { LinkList } from './LinkList.jsx'
 // Constants
 const LEGAL_LINKS = [
 	{
+		title: 'Code of Conduct',
+		url: '/code-of-conduct',
+	},
+	{
+		title: 'Terms of Service',
+		url: '/terms-of-service',
+	},
+	{
 		title: 'Privacy Policy',
 		url: '/privacy-policy',
 	},
@@ -30,8 +38,8 @@ const LEGAL_LINKS = [
 		url: '/cookie-policy',
 	},
 	{
-		title: 'Terms of Service',
-		url: '/terms-of-service',
+		title: 'Acceptable Use Policy',
+		url: '/acceptable-use-policy',
 	},
 ]
 const RESOURCE_LINKS = [
@@ -42,6 +50,10 @@ const RESOURCE_LINKS = [
 	{
 		title: 'Star Citizen Wiki',
 		url: 'https://starcitizen.tools',
+	},
+	{
+		title: 'Erkul Ship Builder',
+		url: 'https://erkul.games',
 	},
 	{
 		title: 'Fleetyards.net',
@@ -72,11 +84,13 @@ const SOCIAL_LINKS = [
 
 
 /**
- *
+ * Renders the main website footer.
  */
 export function ApplicationFooter() {
 	return (
-		<footer className={styles.footer}>
+		<footer
+			className={styles.footer}
+			role={'contentinfo'}>
 			<div className={styles['link-sections']}>
 				<LinkList
 					links={SOCIAL_LINKS}

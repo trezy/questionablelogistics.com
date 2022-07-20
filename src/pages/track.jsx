@@ -3,6 +3,8 @@
  */
 export default function TrackingPage() {
 	return (
-		<h2>{'Tracking'}</h2>
+		<div />
 	)
 }
+
+TrackingPage.title = 'Tracking'

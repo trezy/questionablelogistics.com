@@ -63,7 +63,9 @@ export default function App(props) {
 					<AnimatePresence
 						exitBeforeEnter
 						onExitComplete={handleExitComplete}>
-						<PageWrapper>
+						<PageWrapper
+							structure={Component.structure}
+							title={Component.title}>
 							<Component
 								key={router.route}
 								{...pageProps} />

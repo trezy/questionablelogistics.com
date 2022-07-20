@@ -37,7 +37,7 @@ const LINKS = [
 
 
 /**
- * The main site banner.
+ * Renders the main site banner.
  */
 export function Banner() {
 	const Router = useRouter()

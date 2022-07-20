@@ -8,7 +8,20 @@
 	overflow-y: auto;
 
 	main {
-		padding: calc(var(--gutter) * 2);
+		align-items: flex-start;
+		display: grid;
+		column-gap: var(--big-gutter);
+		grid-template-areas:
+			'page-title page-title'
+			'content table-of-contents';
+		padding: calc(var(--gutter) * 2) calc(var(--gutter) * 4);
+
+		&.no-table-of-contents {
+			column-gap: 0;
+			grid-template-areas:
+				'page-title'
+				'content';
+		}
 
 		h2 {
 			border-bottom-color: var(--palette-white);
@@ -20,4 +33,9 @@
 			margin-bottom: var(--gutter);
 		}
 	}
+}
+
+.page-title {
+	color: var(--heading-color);
+	grid-area: page-title;
 }

@@ -5,16 +5,16 @@
 	border-top-style: solid;
 	border-top-width: 0.1rem;
 	display: grid;
+	font-size: 0.8em;
 	gap: var(--gutter);
-	grid-area: footer;
 	grid-template-columns: 1fr auto;
 	grid-template-rows: repeat(2, auto);
 	justify-content: space-between;
 	margin-top: auto;
 	padding-bottom: var(--gutter);
-	padding-left: calc(var(--gutter) * 2);
+	padding-left: var(--big-gutter);
 	padding-top: var(--gutter);
-	padding-right: calc(var(--gutter) * 2);
+	padding-right: var(--big-gutter);
 
 	.link-sections {
 		display: grid;

@@ -1,0 +1,54 @@
+.content {
+	grid-area: content;
+	line-height: 1.4;
+
+	p,
+	ol,
+	ul {
+		margin-bottom: var(--gutter);
+	}
+
+	h3,
+	h4 {
+		color: var(--heading-color);
+		font-family: var(--font-display);
+		margin-bottom: 1rem;
+		margin-top: calc(var(--gutter) * 2);
+	}
+
+	h3 {
+		font-size: 1.4em;
+		position: relative;
+
+		&:after {
+			background-image: linear-gradient(
+				to right,
+				var(--palette-white),
+				hsla(var(--palette-light-blue-hsl), 0.5) 10%,
+				transparent,
+			);
+			bottom: 0;
+			content: '';
+			height: 0.1rem;
+			left: 0;
+			position: absolute;
+			right: 0;
+		}
+
+		+ h4 {
+			margin-top: var(--gutter);
+		}
+	}
+
+	ol, ul {
+		padding-left: 3rem;
+	}
+
+	ol {
+		list-style-type: decimal;
+	}
+
+	ul {
+		list-style-type: square;
+	}
+}

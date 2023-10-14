@@ -12,7 +12,7 @@ const DEFAULT_OPTIONS = {
  * Takes an object of keyed arrays and joins them into a string.
  *
  * @param {object} input The object to be compiled.
- * @param {object} options All options.
+ * @param {object} [options] All options.
  * @param {string} options.groupSeparator The string used to separate the values within a group.
  * @param {string} options.separator The string used to separate groups of values.
  * @returns {string} The compiled string.

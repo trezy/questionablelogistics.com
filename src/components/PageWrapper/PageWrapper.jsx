@@ -75,6 +75,6 @@ PageWrapper.defaultProps = {
 PageWrapper.propTypes = {
 	children: PropTypes.node,
 	showPageTitle: PropTypes.bool,
-	structure: PropTypes.object,
+	structure: PropTypes.array,
 	title: PropTypes.string.isRequired,
 }

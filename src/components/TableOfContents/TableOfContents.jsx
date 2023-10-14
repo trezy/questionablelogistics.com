@@ -33,7 +33,7 @@ function mapTier(tier) {
 	} = tier
 
 	return (
-		<li>
+		<li key={id}>
 			<Link href={`#${id}`}>{title}</Link>
 
 			{Boolean(children?.length) && (
@@ -71,5 +71,5 @@ export function TableOfContents(props) {
 }
 
 TableOfContents.propTypes = {
-	structure: PropTypes.object.isRequired,
+	structure: PropTypes.array.isRequired,
 }

@@ -15,7 +15,7 @@ import PropTypes from 'prop-types'
 /**
  * Renders a section header.
  *
- * @param {object} props All props.
+ * @component
  */
 export function Header(props) {
 	const { children } = props

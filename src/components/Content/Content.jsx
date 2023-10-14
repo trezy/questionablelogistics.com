@@ -15,8 +15,7 @@ import PropTypes from 'prop-types'
 /**
  * Renders flow content, such as a blog post.
  *
- * @param {object} props All props.
- * @param {import('react').ReactNode} children
+ * @component
  */
 export function Content(props) {
 	const { children } = props

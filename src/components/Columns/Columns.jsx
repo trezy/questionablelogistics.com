@@ -17,8 +17,7 @@ import { useMemo } from 'react'
 /**
  * Renders flow content, such as a blog post.
  *
- * @param {object} props All props.
- * @param {import('react').ReactNode} children
+ * @component
  */
 export function Columns(props) {
 	const { children } = props

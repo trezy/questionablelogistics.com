@@ -25,10 +25,7 @@ import { ExternalLink } from '../ExternalLink.jsx'
 /**
  * Handles ambiguous links, wrapping them with whichever component is most appropriate.
  *
- * @param {object} props All props.
- * @param {import('react').ReactNode} props.children The contents of the component.
- * @param {string} [props.className] Additional classes to be applied to the component.
- * @param {string} props.href The URL to which this link leads.
+ * @component
  */
 export function Link(props) {
 	const {

@@ -9,6 +9,8 @@ import { PageSection } from '../PageSection/PageSection.jsx'
 
 /**
  * The about page.
+ *
+ * @component
  */
 export function AboutPage() {
 	return (

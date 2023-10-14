@@ -9,6 +9,8 @@ import { PageSection } from '../components/PageSection/PageSection.jsx'
 
 /**
  * This page includes the complete Cookie Policy for the website.
+ *
+ * @component
  */
 export default function CookiePolicyPage() {
 	return (

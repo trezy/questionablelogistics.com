@@ -24,9 +24,7 @@ import { useMemo } from 'react'
 /**
  * Renders a large hero section.
  *
- * @param {object} props All props.
- * @param {import('react').ReactNode} props.children The contents of the component.
- * @param {string} [props.className] Additional classes to be applied to the component.
+ * @component
  */
 export function Hero(props) {
 	const {

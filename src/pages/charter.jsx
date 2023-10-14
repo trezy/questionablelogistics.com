@@ -7,6 +7,8 @@ import { Content } from '../components/Content/Content.jsx'
 
 /**
  * This page includes the complete Charter for the Questionable Logistics org.
+ *
+ * @component
  */
 export default function CharterPage() {
 	return (

@@ -37,6 +37,8 @@ const IMAGE_SWAP_MILLISECONDS = 10000
 
 /**
  * Fullscreen image carousel that automatically cycles through pictures.
+ *
+ * @component
  */
 export function BackgroundCarousel() {
 	const [currentImageIndex, setCurrentImageIndex] = useState(1)

@@ -9,6 +9,8 @@ import { PageSection } from '../components/PageSection/PageSection.jsx'
 
 /**
  * This page includes the complete Code of Conduct for the Questionable Logistics community.
+ *
+ * @component
  */
 export default function CodeOfConductPage() {
 	return (

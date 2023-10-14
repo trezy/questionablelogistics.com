@@ -21,16 +21,9 @@ import { Link } from '../Link/Link.jsx'
 
 
 /**
- * @typedef TierObject
- * @property {TierObject[]} [children] An array of child tiers
- * @property {string} id The ID of the element on the page.
- * @property {string} title The title of the tier.
- */
-/**
  * Recursively converts tiers into JSX.
  *
- * @param {TierObject} tier The current tier to be parsed and converted.
- * @returns {import('react').ReactNode} A JSX representation of the page structure.
+ * @component
  */
 function mapTier(tier) {
 	const {
@@ -55,8 +48,7 @@ function mapTier(tier) {
 /**
  * Renders a hierarchical table of contents for a page's content.
  *
- * @param {object} props All props.
- * @param {object} props.structure The structure of the page.
+ * @component
  */
 export function TableOfContents(props) {
 	const { structure } = props

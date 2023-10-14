@@ -30,6 +30,8 @@ const LINKS = [
 
 /**
  * Renders the main site banner.
+ *
+ * @component
  */
 export function Banner() {
 	return (

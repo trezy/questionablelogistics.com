@@ -8,6 +8,8 @@ import { PageSection } from '../components/PageSection/PageSection.jsx'
 
 /**
  * This page includes the complete Acceptable Use Policy for the website.
+ *
+ * @component
  */
 export default function AcceptableUsePolicyPage() {
 	return (

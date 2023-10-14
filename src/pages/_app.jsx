@@ -40,7 +40,11 @@ function handleExitComplete() {
 	}
 }
 
-// eslint-disable-next-line jsdoc/require-jsdoc
+/**
+ * Renders the global site components.
+ *
+ * @component
+ */
 export default function App(props) {
 	const {
 		Component,

@@ -45,6 +45,8 @@ const GOOGLE_FONTS_STRING = Object
 
 /**
  * Customises the root HTML shell.
+ *
+ * @component
  */
 export default function Document() {
 	return (

@@ -40,6 +40,8 @@ const CLIENTS = [
 
 /**
  * The home page.
+ *
+ * @component
  */
 export function HomePage() {
 	return (

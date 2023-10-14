@@ -17,10 +17,7 @@ import { useMemo } from 'react'
 /**
  * Renders a page section.
  *
- * @param {object} props All props.
- * @param {import('react').ReactNode} props.children The contents of the component.
- * @param {string} [props.className] Additional classes to be applied to the component.
- * @param {string} props.id A unique identifier to be applied to the component.
+ * @component
  */
 export function PageSection(props) {
 	const {

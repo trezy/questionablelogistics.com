@@ -25,10 +25,7 @@ import { TableOfContents } from '../TableOfContents/TableOfContents.jsx'
 /**
  * Wraps page content.
  *
- * @param {object} props All props.
- * @param {import('react').ReactNode} props.children The contents of the component.
- * @param {boolean} [props.showPageTitle] Whether or not the page title should be rendered.
- * @param {object} [props.structure] The structure of the page contents.
+ * @component
  */
 export function PageWrapper(props) {
 	const {

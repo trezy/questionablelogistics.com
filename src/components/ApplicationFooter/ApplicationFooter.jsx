@@ -85,6 +85,8 @@ const SOCIAL_LINKS = [
 
 /**
  * Renders the main website footer.
+ *
+ * @component
  */
 export function ApplicationFooter() {
 	return (

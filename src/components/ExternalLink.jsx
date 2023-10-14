@@ -8,19 +8,22 @@ import PropTypes from 'prop-types'
 /**
  * Renders a link to another domain.
  *
- * @param {object} props All props.
- * @param {import('react').ReactNode} props.children The contents of the component.
- * @param {string} props.rel The relationship of the linked domain.
+ * @component
  */
 export function ExternalLink(props) {
 	const {
 		children,
+		className,
+		href,
 		rel,
 	} = props
 
 	return (
+		// eslint-disable-next-line react/forbid-elements
 		<a
 			{...props}
+			className={className}
+			href={href}
 			rel={`noopener noreferrer ${rel}`}
 			target={'_blank'}>
 			{children}
@@ -29,10 +32,13 @@ export function ExternalLink(props) {
 }
 
 ExternalLink.defaultProps = {
+	className: '',
 	rel: '',
 }
 
 ExternalLink.propTypes = {
 	children: PropTypes.node.isRequired,
+	className: PropTypes.string,
+	href: PropTypes.string.isRequired,
 	rel: PropTypes.string,
 }

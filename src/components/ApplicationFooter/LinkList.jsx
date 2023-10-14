@@ -14,17 +14,9 @@ import { Link } from '../Link/Link.jsx'
 
 
 /**
- * @typedef LinkObject
- * @property {string} title Text to represent the link's destination.
- * @property {string} url The destination of this link.
- */
-
-/**
  * Renders a list of links for the footer.
  *
- * @param {object} props All props
- * @param {LinkObject[]} props.links A list of links to be rendered.
- * @param {string} props.title Title to be rendered.
+ * @component
  */
  export function LinkList(props) {
 	const {

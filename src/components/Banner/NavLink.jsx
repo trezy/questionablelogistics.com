@@ -51,15 +51,9 @@ const SUBNAV_WRAPPER_VARIANTS = {
 
 
 /**
- * @typedef Link
- * @property {string} children The contents of the link.
- * @property {Link[]} [links] The path to which this link should lead.
- * @property {string} path The path to which this link should lead.
- */
-/**
  * Renders a link, as well as it's sub links if there are any.
  *
- * @param {Link} props All props.
+ * @component
  */
 export function NavLink(props) {
 	const {

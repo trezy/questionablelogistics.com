@@ -1,0 +1,16 @@
+:root {
+	--hue-shift: 0deg;
+
+	@include generateHSLCustomPropertiesFromColor('palette-black', #000);
+	@include generateHSLCustomPropertiesFromColor('palette-blue', #0f1a27);
+	@include generateHSLCustomPropertiesFromColor('palette-dark-blue', #04101b);
+	@include generateHSLCustomPropertiesFromColor('palette-light-blue', #42cbf8);
+	@include generateHSLCustomPropertiesFromColor('palette-blue-grey', #c2cfe1);
+	@include generateHSLCustomPropertiesFromColor('palette-dark-grey', hsl(0, 0%, 20%));
+	@include generateHSLCustomPropertiesFromColor('palette-light-grey', hsl(0, 0%, 70%));
+	@include generateHSLCustomPropertiesFromColor('palette-white', #fff);
+
+	--background-color: var(--palette-dark-blue);
+	--heading-color: var(--palette-white);
+	--text-color: var(--palette-blue-grey);
+}

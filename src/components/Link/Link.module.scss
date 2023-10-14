@@ -1,0 +1,11 @@
+.link {
+	color: var(--palette-light-blue);
+	text-decoration-color: transparent;
+	transition-duration: 0.1s;
+	transition-property: text-decoration-color;
+
+	&:focus,
+	&:hover {
+		text-decoration-color: currentColor;
+	}
+}

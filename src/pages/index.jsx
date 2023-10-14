@@ -1,8 +1,4 @@
-/**
- * The home page.
- */
-export default function HomePage() {
-	return (
-		<div>{'Questionable Logistics'}</div>
-	)
-}
+// Local imports
+import { HomePage } from '../components/HomePage/HomePage.jsx'
+
+export default HomePage

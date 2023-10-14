@@ -1,0 +1,52 @@
+.page-wrapper {
+	align-content: stretch;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	grid-area: main;
+	min-height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	main {
+		align-content: stretch;
+		align-items: stretch;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		padding-bottom: 10rem;
+	}
+
+	> footer {
+		grid-area: footer;
+		position: relative;
+		z-index: 1;
+	}
+
+	.middle-wrapper {
+		display: flex;
+		flex-grow: 1	;
+		position: relative;
+
+		aside {
+			flex-shrink: 0;
+			margin-right: var(--big-gutter);
+			order: 2;
+		}
+	}
+}
+
+.page-title {
+	border-bottom-color: var(--palette-white);
+	border-bottom-style: solid;
+	border-bottom-width: 0.2rem;
+	color: var(--heading-color);
+	font-family: var(--font-display);
+	font-size: 5rem;
+	grid-area: page-title;
+	letter-spacing: 0.5rem;
+	margin-bottom: var(--gutter);
+	margin-left: var(--big-gutter);
+	margin-right: var(--big-gutter);
+	margin-top: var(--big-gutter);
+}

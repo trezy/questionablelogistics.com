@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'Nostromo';
+	font-style: normal;
+	font-weight: 300;
+	src:
+		url('/fonts/Nostromo-Light.woff2') format('woff2'),
+		url('/fonts/Nostromo-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Nostromo';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url('/fonts/Nostromo-Medium.woff2') format('woff2'),
+		url('/fonts/Nostromo-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Nostromo';
+	font-style: normal;
+	font-weight: 700;
+	src:
+		url('/fonts/Nostromo-Bold.woff2') format('woff2'),
+		url('/fonts/Nostromo-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Nostromo';
+	font-style: normal;
+	font-weight: 800;
+	src:
+		url('/fonts/Nostromo-Heavy.woff2') format('woff2'),
+		url('/fonts/Nostromo-Heavy.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Nostromo';
+	font-style: normal;
+	font-weight: 900;
+	src:
+		url('/fonts/Nostromo-Black.woff2') format('woff2'),
+		url('/fonts/Nostromo-Black.woff') format('woff');
+}

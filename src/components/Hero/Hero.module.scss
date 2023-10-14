@@ -1,0 +1,9 @@
+.hero {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-grow: 1;
+	min-height: calc(100vh - var(--gutter));
+	padding: var(--big-gutter);
+	position: relative;
+}

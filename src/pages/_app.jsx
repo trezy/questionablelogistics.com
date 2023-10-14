@@ -64,6 +64,7 @@ export default function App(props) {
 						exitBeforeEnter
 						onExitComplete={handleExitComplete}>
 						<PageWrapper
+							showPageTitle={Component.showPageTitle}
 							structure={Component.structure}
 							title={Component.title}>
 							<Component

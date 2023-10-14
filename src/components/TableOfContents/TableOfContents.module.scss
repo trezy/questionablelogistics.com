@@ -1,4 +1,5 @@
 .table-of-contents {
+	align-self: flex-start;
 	background-color: hsla(var(--palette-dark-grey-hsl), 0.5);
 	border-bottom-color: var(--palette-dark-grey);
 	border-bottom-style: solid;
@@ -12,7 +13,8 @@
 	);
 	grid-area: table-of-contents;
 	line-height: 1.2;
-	font-size: 0.8em;
+	font-size: var(--font-size-small);
+	margin-bottom: var(--gutter);
 	max-height: calc(100vh - (var(--gutter) * 2));
 	overflow: auto;
 	padding: var(--gutter) 0 1rem;

@@ -107,7 +107,7 @@ export function ApplicationFooter() {
 
 			<Image
 				height={100}
-				src={'/images/StarCitizenCommunity.png'}
+				src={'/images/brands/star-citizen-community/logo.png'}
 				width={100} />
 
 			<small>

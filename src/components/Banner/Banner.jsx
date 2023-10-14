@@ -6,11 +6,8 @@ import styles from './Banner.module.scss'
 
 
 // Module imports
-import classnames from 'classnames'
 import Image from 'next/image.js'
-import Link from 'next/link.js'
-import { useMemo } from 'react'
-import { useRouter } from 'next/router.js'
+import { mapLink } from './mapLink.jsx'
 
 
 
@@ -19,19 +16,14 @@ import { useRouter } from 'next/router.js'
 // Constants
 const LINKS = [
 	{
+		children: 'Home',
 		path: '/',
-		title: 'Home',
 	},
 	{
-		path: '/track',
-		title: 'Track',
-	},
-	{
+		children: 'About',
 		path: '/about',
-		title: 'About',
 	},
 ]
-
 
 
 
@@ -40,42 +32,19 @@ const LINKS = [
  * Renders the main site banner.
  */
 export function Banner() {
-	const Router = useRouter()
-
-	const mappedLinks = useMemo(() => {
-		return LINKS.map((link, index) => {
-			const compiledClassName = classnames({
-				[styles['is-active']]: Router.asPath === link.path,
-			})
-
-			return (
-				<Link
-					key={index}
-					href={link.path}>
-					<a
-						className={compiledClassName}
-						href={link.path}>
-						{link.title}
-					</a>
-				</Link>
-			)
-		})
-	}, [Router.asPath])
-
 	return (
 		<header
 			className={styles.banner}
 			role={'banner'}>
-			<h1>
+			<h1 className={styles.brand}>
 				<Image
 					alt={'Questionable Logistics Consolidated Logo'}
-					height={100}
-					src={'https://placehold.co/250x100?text=Logo'}
-					width={250} />
+					layout={'fill'}
+					src={'/images/brands/questionable-logistics/logo.abbreviated.transparent.png'} />
 			</h1>
 
 			<nav>
-				{mappedLinks}
+				{LINKS.map(mapLink)}
 			</nav>
 		</header>
 	)

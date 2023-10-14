@@ -1,0 +1,46 @@
+.header {
+	border: none;
+	color: var(--palette-white);
+	display: flex;
+	grid-area: header;
+	flex-direction: column;
+	width: 100%;
+
+	h2 {
+		display: flex;
+		flex-direction: column;
+		font-family: var(--font-display);
+		margin-bottom: 2rem;
+		text-align: right;
+		white-space: nowrap;
+
+		:first-child {
+			font-size: 4em;
+
+			@media (max-width: 1800px) {
+				font-size: 3em;
+			}
+
+			@media (max-width: 1400px) {
+				font-size: 2.5em;
+			}
+		}
+
+		:last-child {
+			font-size: 2.5em;
+
+			@media (max-width: 1800px) {
+				font-size: 2em;
+			}
+
+			@media (max-width: 1400px) {
+				font-size: 1.75em;
+			}
+		}
+	}
+
+	p {
+		line-height: 1.5;
+		max-width: 70%;
+	}
+}

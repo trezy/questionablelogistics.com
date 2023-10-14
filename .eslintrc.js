@@ -180,6 +180,10 @@ module.exports = {
 		'react/forbid-elements': ['error', {
 			forbid: [
 				{
+					element: 'a',
+					message: 'Use <Link> component instead.',
+				},
+				{
 					element: 'button',
 					message: 'Use <Button> component instead.',
 				},

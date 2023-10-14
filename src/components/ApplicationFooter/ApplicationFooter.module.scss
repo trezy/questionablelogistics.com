@@ -4,12 +4,20 @@
 	border-top-color: hsla(var(--palette-dark-grey-hsl), 1);
 	border-top-style: solid;
 	border-top-width: 0.1rem;
+	clip-path: polygon(
+		0 0,
+		calc(100% - var(--gutter)) 0,
+		100% var(--gutter),
+		100% 100%,
+		0 100%,
+	);
 	display: grid;
-	font-size: 0.8em;
+	font-size: var(--font-size-small);
 	gap: var(--gutter);
 	grid-template-columns: 1fr auto;
 	grid-template-rows: repeat(2, auto);
 	justify-content: space-between;
+	margin-right: calc(var(--gutter) * 2);
 	margin-top: auto;
 	padding-bottom: var(--gutter);
 	padding-left: var(--big-gutter);
@@ -89,6 +97,6 @@
 
 	small {
 		color: var(--palette-light-grey);
-		font-size: 0.8em;
+		font-size: var(--font-size-small);
 	}
 }

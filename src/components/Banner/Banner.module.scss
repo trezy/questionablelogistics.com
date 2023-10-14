@@ -1,68 +1,58 @@
 .banner {
+	--banner-left-margin: calc(var(--gutter) * 2);
+
 	background-color: hsla(var(--palette-dark-grey-hsl), 0.5);
 	border-right-color: hsla(var(--palette-dark-grey-hsl), 1);
 	border-right-style: solid;
 	border-right-width: 0.1rem;
 	bottom: 0;
 	display: flex;
+	box-shadow: 0 0 2rem hsla(var(--palette-black-hsl), 0.2);
 	flex-direction: column;
 	flex-shrink: 0;
 	grid-area: banner;
-	margin-left: calc(var(--gutter) * 2);
+	margin-left: var(--banner-left-margin);
 	max-height: 100vh;
 	position: sticky;
 	top: 0;
+	z-index: 2;
 
 	nav {
 		display: flex;
 		flex-direction: column;
+		overflow-y: auto;
+	}
 
-		a {
-			color: var(--palette-white);
-			font-family: var(--font-display);
-			font-size: 2rem;
-			padding: var(--gutter);
-			position: relative;
-			text-decoration: none;
-			text-indent: 0;
-			transition-duration: 0.2s;
-			transition-property: text-indent;
+	.brand {
+		--brand-overhang: 2rem;
+		--brand-wing-width: 2rem;
 
-			&:after,
-			&:before {
-				bottom: 0;
-				content: '';
-				left: 0;
-				pointer-events: none;
-				position: absolute;
-				top: 0;
-				transition-duration: 0.2s;
-			}
+		flex-shrink: 0;
+		filter: drop-shadow(1rem 1rem 0.5rem hsla(var(--palette-black-hsl), 0.3));
+		height: 9.5rem;
+		margin-bottom: var(--gutter);
+		margin-top: var(--gutter);
+		position: relative;
+		width: 25rem;
 
-			&:after {
-				background-color: hsla(var(--palette-white-hsl), 0.2);
-				right: 100%;
-				transition-property: right;
-				z-index: -1;
-			}
-
-			&:before {
-				background-color: var(--palette-light-blue);
-				width: 0;
-				transition-property: width;
-			}
-
-			&:hover {
-				text-indent: 1rem;
-
-				&:after {
-					right: 0;
-				}
-			}
-
-			&.is-active:before {
-				width: 0.2rem;
-			}
+		&:after {
+			background-color: var(--background-color);
+			bottom: 0;
+			clip-path: polygon(
+				0 0,
+				calc(100% - var(--brand-overhang)) 0,
+				100% var(--brand-overhang),
+				100% calc(100% - var(--brand-overhang)),
+				calc(100% - var(--brand-overhang)) 100%,
+				0 100%,
+			);
+			content: '';
+			display: block;
+			left: calc((var(--banner-left-margin) * 2) * -1);
+			position: absolute;
+			right: calc((var(--brand-overhang) + var(--brand-wing-width)) * -1);
+			top: 0;
+			z-index: -1;
 		}
 	}
 }

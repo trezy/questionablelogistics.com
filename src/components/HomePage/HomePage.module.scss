@@ -1,0 +1,212 @@
+section.intro-section {
+	flex-direction: column;
+	display: flex;
+	gap: var(--big-gutter);
+	justify-content: flex-end;
+	min-height: calc(100vh - var(--gutter));
+
+	@keyframes flash {
+		from {
+			opacity: 0.2;
+		}
+
+		to {
+			opacity: 0.75;
+		}
+	}
+
+	&:after {
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-name: flash;
+		border-color: transparent;
+		border-style: solid;
+		border-width: 0.3rem;
+		border-bottom-color: var(--palette-white);
+		border-left-color: var(--palette-white);
+		bottom: 5rem;
+		height: 3rem;
+		left: 50%;
+		content: '';
+		opacity: 0.5;
+		position: absolute;
+		transform:
+			translate(-50%)
+			rotate(-45deg);
+		width: 3rem;
+	}
+
+	header {
+		align-items: flex-end;
+		border: none;
+		color: var(--palette-white);
+		display: flex;
+		grid-area: header;
+		flex-direction: column;
+		text-align: right;
+		width: 100%;
+
+		h2 {
+			display: flex;
+			flex-direction: column;
+			font-family: var(--font-display);
+			margin-bottom: 2rem;
+			text-align: right;
+			white-space: nowrap;
+
+			:first-child {
+				font-size: 4em;
+
+				@media (max-width: 1800px) {
+					font-size: 3em;
+				}
+
+				@media (max-width: 1400px) {
+					font-size: 2.5em;
+				}
+			}
+
+			:last-child {
+				font-size: 2.5em;
+
+				@media (max-width: 1800px) {
+					font-size: 2em;
+				}
+
+				@media (max-width: 1400px) {
+					font-size: 1.75em;
+				}
+			}
+		}
+
+		p {
+			line-height: 1.5;
+			max-width: 70%;
+		}
+	}
+
+	.client-list {
+		grid-area: client-list;
+		opacity: 0.7;
+		width: 100%;
+
+		h3 {
+			font-family: var(--font-display);
+			margin-bottom: 4rem;
+			padding-bottom: 0.5rem;
+			position: relative;
+
+			&:after {
+				background-color: var(--palette-white);
+				content: '';
+				height: 0.1rem;
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 100%;
+			}
+		}
+
+		ul {
+			display: grid;
+			gap: var(--gutter);
+			grid-template-columns: repeat(auto-fit, minmax(calc((100% / 10) - (var(--gutter) * 9)), 1fr));
+
+			li {
+				height: 10rem;
+				position: relative;
+			}
+		}
+	}
+}
+
+.questionable-logistics-definitions {
+	background-color: var(--palette-dark-blue);
+	padding: var(--big-gutter);
+
+	header {
+		font-family: var(--font-display);
+		margin-bottom: 4rem;
+		padding-bottom: 0.5rem;
+		position: relative;
+
+		&:after {
+			background-color: var(--palette-white);
+			content: '';
+			height: 0.1rem;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 100%;
+		}
+	}
+
+	dl {
+		column-gap: var(--big-gutter);
+		display: grid;
+		font-size: 1.5em;
+		grid-template-columns: repeat(2, 1fr);
+
+		:nth-child(1) {
+			order: 1;
+		}
+
+		:nth-child(2) {
+			order: 3;
+		}
+
+		:nth-child(3) {
+			order: 5;
+		}
+
+		:nth-child(4) {
+			order: 2;
+		}
+
+		:nth-child(5) {
+			order: 4;
+		}
+
+		:nth-child(6) {
+			order: 6;
+		}
+
+		:nth-child(4),
+		:nth-child(5),
+		:nth-child(6) {
+			text-align: right;
+		}
+
+		dt {
+			color: var(--palette-white);
+			font-family: var(--font-display);
+			font-size: 2em;
+			font-weight: 700;
+		}
+
+		dd[aria-label='Pronunciation'] {
+			margin-top: 0rem;
+			font-size: 0.8em;
+			font-style: italic;
+
+			&:after,
+			&:before {
+				font-style: normal;
+			}
+
+			&:after {
+				content: ' ]';
+			}
+
+			&:before {
+				content: '[ ';
+			}
+		}
+
+		dd[aria-label='Definition'] {
+			color: var(--palette-white);
+			margin-top: var(--gutter);
+		}
+	}
+}

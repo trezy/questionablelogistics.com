@@ -1,10 +1,4 @@
-/**
- * The home page.
- */
-export default function HomePage() {
-	return (
-		<div />
-	)
-}
+// Local imports
+import { HomePage } from '../components/HomePage/HomePage.jsx'
 
-HomePage.title = 'Home'
+export default HomePage

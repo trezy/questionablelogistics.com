@@ -1,18 +1,22 @@
 .content {
-	grid-area: content;
 	line-height: 1.4;
 
 	p,
 	ol,
 	ul {
 		margin-bottom: var(--gutter);
+		margin-left: var(--big-gutter);
+		margin-right: var(--big-gutter);
 	}
 
 	h3,
-	h4 {
+	h4,
+	h5 {
 		color: var(--heading-color);
 		font-family: var(--font-display);
 		margin-bottom: 1rem;
+		margin-left: var(--big-gutter);
+		margin-right: var(--big-gutter);
 		margin-top: calc(var(--gutter) * 2);
 	}
 
@@ -38,6 +42,16 @@
 		+ h4 {
 			margin-top: var(--gutter);
 		}
+	}
+
+	h4 {
+		+ h5 {
+			margin-top: var(--gutter);
+		}
+	}
+
+	h5 {
+		font-size: 0.8em;
 	}
 
 	ol, ul {

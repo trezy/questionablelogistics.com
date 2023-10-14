@@ -116,6 +116,10 @@ section.intro-section {
 			li {
 				height: 10rem;
 				position: relative;
+
+				img {
+					object-fit: contain;
+				}
 			}
 		}
 	}

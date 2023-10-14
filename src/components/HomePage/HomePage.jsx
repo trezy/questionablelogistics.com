@@ -44,9 +44,7 @@ const CLIENTS = [
 export function HomePage() {
 	return (
 		<>
-			<Hero
-				className={styles['intro-section']}
-				isFullWidth>
+			<Hero className={styles['intro-section']}>
 				<header>
 					<h2>
 						<div>{'Questionable methods.'}</div>
@@ -65,8 +63,7 @@ export function HomePage() {
 								<li key={client}>
 									<Image
 										alt={`${client} Logo`}
-										layout={'fill'}
-										objectFit={'contain'}
+										fill
 										src={`/images/brands/${client.toLowerCase().replace(/\s/gu, '-')}/logo.white.png`} />
 								</li>
 							)

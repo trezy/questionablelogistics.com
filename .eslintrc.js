@@ -20,15 +20,10 @@ module.exports = {
 		'plugin:react-prefer-function-component/recommended',
 		'plugin:security/recommended',
 		'plugin:@next/next/recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:@next/next/recommended',
 	],
-	overrides: [
-		{
-			files: ['*.jsx'],
-			rules: {
-				'jsdoc/require-returns': ['off'],
-			},
-		},
-	],
+	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true,
@@ -43,6 +38,7 @@ module.exports = {
 		'security',
 		'sort-class-members',
 		'unused-imports',
+		'@typescript-eslint',
 	],
 	rules: {
 		// eslint
@@ -162,6 +158,12 @@ module.exports = {
 		}],
 
 		// jsdoc
+		'jsdoc/check-tag-names': ['error', {
+			definedTags: [
+				'component',
+				'xstate-layout',
+			],
+		}],
 		'jsdoc/require-jsdoc': ['error', {
 			require: {
 				ArrowFunctionExpression: true,
@@ -171,6 +173,15 @@ module.exports = {
 				FunctionExpression: true,
 				MethodDefinition: true,
 			},
+		}],
+		'jsdoc/require-param': ['error', {
+			exemptedBy: ['component'],
+		}],
+		'jsdoc/require-returns': ['error', {
+			exemptedBy: ['component'],
+		}],
+		'jsdoc/tag-lines': ['error', 'never', {
+			startLines: 1,
 		}],
 
 		// react
@@ -235,6 +246,9 @@ module.exports = {
 		'security/detect-object-injection': ['off'],
 	},
 	settings: {
+		jsdoc: {
+			mode: 'typescript',
+		},
 		react: {
 			version: 'detect',
 		},

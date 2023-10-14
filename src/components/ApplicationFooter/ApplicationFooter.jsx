@@ -106,6 +106,7 @@ export function ApplicationFooter() {
 			</div>
 
 			<Image
+				alt={'Star Citizen Community Logo'}
 				height={100}
 				src={'/images/brands/star-citizen-community/logo.png'}
 				width={100} />

@@ -30,6 +30,10 @@
 	top: 0;
 	width: 100vw;
 
+	img {
+		object-fit: cover;
+	}
+
 	&:first-child {
 		z-index: 2;
 	}

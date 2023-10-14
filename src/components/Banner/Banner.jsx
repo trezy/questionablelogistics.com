@@ -39,7 +39,7 @@ export function Banner() {
 			<h1 className={styles.brand}>
 				<Image
 					alt={'Questionable Logistics Consolidated Logo'}
-					layout={'fill'}
+					fill
 					src={'/images/brands/questionable-logistics/logo.abbreviated.transparent.png'} />
 			</h1>
 

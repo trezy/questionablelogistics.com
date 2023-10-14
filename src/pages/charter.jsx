@@ -128,7 +128,7 @@ export default function CharterPage() {
 	)
 }
 
-CharterPage.title = 'Code of Conduct'
+CharterPage.title = 'Charter'
 
 CharterPage.structure = [
 	{

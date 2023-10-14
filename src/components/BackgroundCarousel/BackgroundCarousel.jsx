@@ -67,8 +67,8 @@ export function BackgroundCarousel() {
 					initial={MOTION_CONFIGS.initial}
 					transition={MOTION_CONFIGS.transition}>
 					<Image
-						layout={'fill'}
-						objectFit={'cover'}
+						alt={''}
+						fill
 						src={`/backgrounds/${String(currentImageIndex).padStart(2, '0')}.jpg`} />
 				</motion.div>
 			</AnimatePresence>

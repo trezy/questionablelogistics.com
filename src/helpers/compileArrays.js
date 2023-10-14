@@ -1,3 +1,13 @@
+// Constants
+const DEFAULT_OPTIONS = {
+	groupSeparator: ',',
+	separator: ';',
+}
+
+
+
+
+
 /**
  * Takes an object of keyed arrays and joins them into a string.
  *
@@ -7,11 +17,12 @@
  * @param {string} options.separator The string used to separate groups of values.
  * @returns {string} The compiled string.
  */
-export function compileArrays(input, options = {}) {
+export function compileArrays(input, options) {
 	const {
-		groupSeparator = ',',
-		separator = ';',
-	} = options
+		groupSeparator,
+		separator,
+	} = options ?? DEFAULT_OPTIONS
+
 	const result = []
 
 	const keys = Object.keys(input)

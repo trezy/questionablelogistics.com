@@ -12,7 +12,6 @@ import '../scss/app.scss'
 import { AnimatePresence } from 'framer-motion'
 import { ColorModeContextProvider } from 'react-color-mode'
 import { config as fontAwesomeConfig } from '@fortawesome/fontawesome-svg-core'
-import { Provider as LyketProvider } from '@lyket/react'
 import PropTypes from 'prop-types'
 import { useRouter } from 'next/router'
 
@@ -56,24 +55,22 @@ export default function App(props) {
 		<>
 			<BackgroundCarousel />
 
-			<LyketProvider apiKey={process.env.NEXT_PUBLIC_LYKET_API_KEY}>
-				<ColorModeContextProvider>
-					<Banner />
+			<ColorModeContextProvider>
+				<Banner />
 
-					<AnimatePresence
-						exitBeforeEnter
-						onExitComplete={handleExitComplete}>
-						<PageWrapper
-							showPageTitle={Component.showPageTitle}
-							structure={Component.structure}
-							title={Component.title}>
-							<Component
-								key={router.route}
-								{...pageProps} />
-						</PageWrapper>
-					</AnimatePresence>
-				</ColorModeContextProvider>
-			</LyketProvider>
+				<AnimatePresence
+					exitBeforeEnter
+					onExitComplete={handleExitComplete}>
+					<PageWrapper
+						showPageTitle={Component.showPageTitle}
+						structure={Component.structure}
+						title={Component.title}>
+						<Component
+							key={router.route}
+							{...pageProps} />
+					</PageWrapper>
+				</AnimatePresence>
+			</ColorModeContextProvider>
 		</>
 	)
 }

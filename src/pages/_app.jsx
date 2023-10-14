@@ -23,7 +23,6 @@ import { useRouter } from 'next/router'
 import { BackgroundCarousel } from '../components/BackgroundCarousel/BackgroundCarousel.jsx'
 import { Banner } from '../components/Banner/Banner.jsx'
 import { PageWrapper } from '../components/PageWrapper/PageWrapper.jsx'
-import { reportWebVitals } from '../helpers/reportWebVitals.js'
 import { useNProgress } from '../hooks/useNProgress.js'
 
 
@@ -86,5 +85,3 @@ App.propTypes = {
 	]).isRequired,
 	pageProps: PropTypes.object,
 }
-
-export { reportWebVitals }
